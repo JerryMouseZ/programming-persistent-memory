@@ -32,7 +32,7 @@
 
 /* example of config structure usage */
 
-#include <cassert>
+#include <assert.h>
 #include "pmemkv_config.h"
 
 const char* PATH = "/daxfs/kvfile";

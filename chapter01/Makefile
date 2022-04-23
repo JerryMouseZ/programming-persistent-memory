@@ -42,10 +42,10 @@ listings: pmemkv.lst
 	expand -t 4 < $^ | cat -n > $@
 
 pmemkv: pmemkv.cpp
-	$(CXX) -o pmemkv pmemkv.cpp -lpmemkv
+	$(CXX) -g -o pmemkv pmemkv.cpp -lpmemkv
 
 clean:
-	$(RM) *.o core a.out
+	$(RM) *.o core a.out pmemkv
 
 clobber: clean
 	$(RM) pmemkv *.lst

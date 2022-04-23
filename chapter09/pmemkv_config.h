@@ -32,8 +32,8 @@
 
 /* example of config structure usage */
 
-#include <cstdio>
-#include <cassert>
+#include <stdio.h>
+#include <assert.h>
 #include <libpmemkv.h>
 
 pmemkv_config* config_setup(const char* path, const uint64_t fcreate, const uint64_t size) {
